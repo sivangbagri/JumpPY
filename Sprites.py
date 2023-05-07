@@ -158,6 +158,7 @@ class Mob(pygame.sprite.Sprite):
     def __init__(self, game):
         self._layer = MOB_LAYER
         self.groups = game.all_sprites, game.mobs
+        #sprites
         pygame.sprite.Sprite.__init__(self, self.groups)
         self.radius = 11
         self.game = game
